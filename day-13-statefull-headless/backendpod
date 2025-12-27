@@ -14,8 +14,8 @@ after apply login pod and test svc
 
 kubectl exec -it dns-client -- sh
 
-
-
+nslookup <svcname>
+#test both servcies headless and clusterip and observer how traffic is routing 
 
 <pod-name>.<headless-service-name>.<namespace>.svc.cluster.local
 
