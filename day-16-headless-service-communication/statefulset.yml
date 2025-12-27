@@ -61,7 +61,7 @@ spec:
         volumeMounts:
         - name: shared-volume
           mountPath: /usr/share/nginx/html
-        - name: www
+        - name: ebs-storage
           mountPath: /usr/share/nginx
   volumeClaimTemplates:
   - metadata:
